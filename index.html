@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Stock Market App</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <img src="./images/images.png" alt="" height="60" class="image">
+        </div>
+        <div>
+            <form action="">
+                <input type="text" placeholder=" What are you looking for today?" class="search">
+                <i class="fa-solid fa-magnifying-glass search-bar"></i>
+            </form>
+        </div>
+        <div>
+            <button class="login btnLogin-popup">Login/Register</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box" id="log">
+                <h2>Login</h2>
+                <form action="/index" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="text" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box" id="register">
+                <h2>Registation</h2>
+                <form action="/auth/register" method="post">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required name="username">
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="text" required name="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required name="password">
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to Terms & Conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="content_1">
+            <div class="wrapper">
+                <div class="static">Investing made </div>
+                <ul class="dynamic">
+                    <li><span>Simple.. </span></li>
+                </ul>
+            </div>
+            <div class="Started">
+                <button class="get_started">Get Started</button>
+            </div>
+        </div>
+        <div class="scan">
+            <img src="./images/QR code.png" alt="" width="100px" class="scanner">
+        </div>
+        <div class="content_2">
+            <div class="gold_stat">
+                <h1>Unlock the potential of gold investment and watch your wealth sparkle.</h1>
+                <div>
+                    <button class="gold_btn">View Gold</button>
+                </div>
+            </div>
+            <div>
+                <img src="images/gold.png" alt="" height="250" class="gold">
+            </div>
+        </div>
+        <div class="content_3">
+            <div class="cara1">
+                <h1>REITs and INVITs</h1>
+                <div>
+                    <img src="images/REITs-and-InvITs.png" alt="" class="cards" height="100px" width="270px">
+                </div>
+                <P>REITs (Real Estate Investment Trusts) and INVITs (Infrastructure Investment Trusts) are two types of
+                    investment vehicles that allow investors to participate in real estate and infrastructure projects,
+                    respectively, without directly owning the underlying assets. </P>
+                <div class="Started">
+                    <button class="get_started">Know More</button>
+                </div>
+            </div>
+            <div class="cara2">
+                <h1>Crypto Currency</h1>
+                <div>
+                    <img src="images/crypto.png" alt="" height="120px" width="320px" class="cards">
+                </div>
+                <p>Crypto currency, short for "cryptographic currency," is a form of digital or virtual currency that
+                    uses cryptography for secure financial transactions, control the creation of new units, and verify
+                    the transfer of assets. </p>
+                <div> </div>
+                <div class="Started">
+                    <button class="get_started">Know More</button>
+                </div>
+            </div>
+            <div class="cara3">
+                <h1>Equity</h1>
+                <div>
+                    <img src="images/different-types-of-equity.jpg" alt="" class="cards" height="90px" width="250px">
+                </div>
+                <p>Equity refers to the ownership interest that individuals or entities have in a company or an asset.
+                    In the context of a company, equity represents the residual interest in the assets of the company
+                    after deducting liabilities. It is often referred to as shareholders' equity.</p>
+                <div class="Started">
+                    <button class="get_started">Know More</button>
+                </div>
+            </div>
+        </div>
+        <div class="content_4">
+            <div class="gold_stat">
+                <h1>Unlock the potential of gold investment and watch your wealth sparkle.</h1>
+                <div>
+                    <a href="stocks.html">
+                        <button class="stock_btn">View Stocks</button>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="images/buy.webp" alt="" height="250" class="gold">
+            </div>
+        </div>
+        <div class="content_5">
+            <div class="open">
+                <h1>Open your account in a minute</h1>
+            </div>
+            <div class="Started">
+                <button class="get_started">Get Started</button>
+            </div>
+        </div>
+        <div class="content_6">
+            <div class="gold_stat">
+                <h1>From small steps to giant leaps: With mutual funds, even modest investments can lead to substantial
+                    financial growth</h1>
+                <div>
+                    <a href="fund.html">
+                        <button class="fund_btn">View Funds</button>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="images/mutual.png" alt="" height="250" class="gold">
+            </div>
+        </div>
+        <div class="content_7">
+            <h1>Credit, When you need it </h1>
+            <h4>Apply for a Loan, get it within minutes</h4> <button class="get_started">Know More</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="icons">
+                <h3>NAME OF THE COMP</h3>
+                <p>Address</p>
+                <p>Contact Us</p>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <div class="products">
+                <h3>PRODUCTS</h3>
+                <p>Stocks</p>
+                <p>Future Options</p>
+                <p>Mutual Funds</p>
+                <p>US Stocks</p>
+                <p>Credit</p>
+            </div>
+            <div class="quick_links">
+                <h3>QUICK LINKS</h3>
+                <p class="ql">Open Demat Account</p>
+                <p class="ql">Glossary</p>
+                <img src="images/app-store-logo.0958106d.svg" alt="" class="appStore">
+                <img src="images/google-play-badge.e21ffdaa.svg" alt="googlePlay">
+            </div>
+        </div>
+        <div class="apps">
+            <p>©2023 All rights Reserved. Built with ❤️ in India</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

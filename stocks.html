@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stocks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Stocks</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <img src="./images/images.png" alt="" height="60" class="image">
+        </div>
+        <div>
+            <form id="search" action="">
+                <input type="text" placeholder=" What are you looking for today?" class="search">
+                <i class="fa-solid fa-magnifying-glass search-bar"></i>
+            </form>
+        </div>
+        <div>
+            <button class="login">Login/Register</button>
+        </div>
+    </div>
+    <div class="graph">
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+    </div>
+    <div class="values">
+        <div class="values1">
+            <h4>Symbol: <input type="text" id="symbol"></h4>
+            <h4>Company Name: <input type="text" id="companyName"></h4>
+        </div>
+        <div class="values2">
+            <h4>Week 52-high: <input type="text" id="week52High"></h4>
+            <h4>MarketCap: <input type="text" id="marketCap"></h4>
+            <h4>Week 52-Low: <input type="text" id="week52Low"></h4>
+        </div>
+        <div class="values3">
+            <h4>Open: <input type="text" id="open"></h4>
+            <h4>Average Total Volume: <input type="text" id="avg"></h4>
+            <h4>Change: <input type="text" id="change"></h4>
+        </div>
+        <div class="values4">
+            <h4>Low: <input type="text" id="low"></h4>
+            <h4>P/E Ratio: <input type="text" id="peRatio"></h4>
+            <h4>Change Percent: <input type="text" id="changePercent"></h4>
+        </div>
+        <div class="values5">
+            <h4>High: <input type="text" id="high"></h4>
+            <h4>Close: <input type="text" id="close"></h4>
+            <h4>Currency: <input type="text" id="currency"></h4>
+        </div>
+        <div class="values6">
+            <h4>Latest Time: <input type="text" id="latestTime"></h4>
+            <h4>Prev Close: <input type="text" id="previousClose"></h4>
+            <h4>Latest Volume: <input type="text" id="latestVolume"></h4>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="icons">
+                <h3>NAME OF THE COMP</h3>
+                <p>Address</p>
+                <p>Contact Us</p>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <div class="products">
+                <h3>PRODUCTS</h3>
+                <p>Stocks</p>
+                <p>Future Options</p>
+                <p>Mutual Funds</p>
+                <p>US Stocks</p>
+                <p>Credit</p>
+            </div>
+            <div class="quick_links">
+                <h3>QUICK LINKS</h3>
+                <p class="ql">Open Demat Account</p>
+                <p class="ql">Glossary</p>
+                <img src="images/app-store-logo.0958106d.svg" alt="" class="appStore">
+                <img src="images/google-play-badge.e21ffdaa.svg" alt="googlePlay">
+            </div>
+        </div>
+        <div class="apps">
+            <p>©2023 All rights Reserved. Built with ❤️ in India</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="stocks.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
